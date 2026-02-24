@@ -16,12 +16,12 @@ for file in README.md pyproject.toml; do
     fi
 done
 
-if [ ! -d todo ]; then
+if [ ! -d src/todo ]; then
     echo "FAIL: Missing todo directory"
     failed=1
 fi
 
-for file in todo/__init__.py todo/views/routes.py; do
+for file in src/todo/__init__.py src/todo/views/routes.py; do
     if [ ! -f "$file" ]; then
         echo "FAIL: Missing $file"
         failed=1

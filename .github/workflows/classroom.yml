@@ -18,7 +18,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Correct Health Endpoint
-        setup-command: pip3 install poetry
+        setup-command: pip3 install uv
         command: "./.csse6400/bin/health.sh"
         timeout: 5
         max-score: 25
@@ -36,7 +36,7 @@ jobs:
       uses: classroom-resources/autograding-command-grader@v1
       with:
         test-name: Correct Todo Endpoints
-        setup-command: pip3 install poetry
+        setup-command: pip3 install uv
         command: "./.csse6400/bin/unittest.sh"
         timeout: 5
         max-score: 25
