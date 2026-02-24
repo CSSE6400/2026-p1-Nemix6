@@ -3,8 +3,8 @@
 # Check that the health endpoint is returning 200
 
 # Start flask app
-poetry install --no-root
-poetry run flask --app todo run -p 6400 &
+uv sync
+uv run flask --app todo run -p 6400 &
 error=$?
 pid=$!
 if [[ $error -ne 0 ]]; then

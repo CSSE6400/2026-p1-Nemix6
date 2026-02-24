@@ -4,6 +4,6 @@
 
 cp -r .csse6400/tests .
 
-poetry install --no-root
-poetry run python3 -m unittest discover -s tests
+uv sync
+uv run python3 -m unittest discover -s tests
 
